@@ -48,6 +48,9 @@
                                 <color key="backgroundColor" red="0.64101601055497193" green="1" blue="0.11413097250001325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wn9-Hi-DqT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-9R-grm">
                                 <rect key="frame" x="166" y="267" width="42" height="20.5"/>
@@ -79,6 +82,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nDn-eb-SMc" secondAttribute="trailing" constant="88" id="tQZ-t8-ksY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="ZHG-9R-grm" id="gbY-46-V0U"/>
+                        <outlet property="passwordTextFieid" destination="zoY-0y-Mco" id="ogq-UU-X81"/>
+                        <outlet property="userTextFieid" destination="gbP-2W-YCU" id="Xxw-Pf-10z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
